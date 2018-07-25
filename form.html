@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration form</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <br>
+     <form method="POST" action="https://formspree.io/lyubac@ukr.net">
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="password1">Password:</label>
+            <input type="text" name="password1" id="password1" required>
+        </p>
+         <p>
+            <label for="password2">Password:</label>
+            <input type="text" name="password2" id="password2" required>
+        </p>
+        <p>
+            <label for="country">Country:</label>
+          <select name="country" id="country">
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="Russia">Russia</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Belarus">Belarus</option>
+            </select>
+
+            
+        </p>
+        <p>
+            <label>Gender:</label>
+            <label>
+                <input type="radio" name="client-gender" value="male">Male
+            </label>
+            <label>
+                <input type="radio" name="client-gender" value="female">Female
+            </label>
+            <label>
+                <input type="radio" name="client-gender" value="other">Other
+            </label>
+        </p>
+        <p>
+            <label for="married">Married:</label>
+            <input type="checkbox" name="married" id="married">
+        </p>
+        <p>
+            <label for="children">Children:</label>
+            <input type="number" name="children" id="children" value="0">
+        </p>
+        <p>
+            <label for="additional">Additional:</label>
+            <textarea rows="10" cols="45" name="additional" id="additional"></textarea>
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
